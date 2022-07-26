@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}        
+         
+body {   
+    background: #143f6b;
+    margin: 0;
+    min-height: 100vh; /* Makes it possible to center piano */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    display: flex; /* Makes keys lined up side by side instead of up and down */
+}
+
+.white {
+    width: 100px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #333;
+}
+
+.white.active {
+    background-color: #CCC;
+}
+
+.black {
+    width: 60px;
+    height: 240px;
+    background-color: black;
+    margin-left: -30px;
+    margin-right: -30px; /* Makes sense incredibly */
+    z-index: 2;
+}
+
+.black.active {
+    background-color: #333;
+}
